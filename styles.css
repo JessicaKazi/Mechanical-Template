@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "ubuntu", "oswald";
+    background-color: #5C7896;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navbar code */
+
+.nav-bar {
+    /* border: 5px solid green; */
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #202D36;
+  /* opacity: 0.6; */
+}
+
+ul li {
+  float: left;
+  padding: 0 177px;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #5C7896;
+  text-decoration: underline;
+}
+
+/* Navbar code */
+
+.heading-1 {
+    border: 5px solid yellow;
+    height: 10vh;
+}
+
+.car-banner {
+    border: 5px solid red;
+    height: 40vh;
+}
+
+.driver-banner {
+    border: 5px solid purple;
+    height: 50vh;
+}
+
+.racecar-banner {
+     border: 5px solid orange;
+     height: 50vh;
+}
+
+.info-container {
+    /* border: 5px solid blue; */
+    height: 80vh;
+}
+
+.info-container1 {
+    border: 5px solid blue;
+    height: 20vh;
+}
+
+.info {
+    text-align: center;
+    color: aliceblue;
+    font-size: larger;
+}
+
+.photo-id {
+    border: 3px solid pink;
+    height: 80vh;
+    /* width: 70vw; */
+    background-image: url(/Banner/kim1.jpg);
+    background-size: cover;
+    /* padding: 20px; */
+}
+
+.photo-id-banner {
+    display: flex;
+}
+
+footer {
+    display: grid;
+    float: inline-start;
+    border: 5px solid red;
+    height: 30vh;
+}
+.copy-tag {
+    font-size: small; 
+    color: aliceblue;
+}
+
+.tag {
+    font-size: large; 
+    color: aliceblue;
+}
+
+.icon {
+  font-size: 70px;
+  display: flex;
+  float: left;
+  padding-left: 150px;
+}
+
+.tag-logo:hover {
+    color: white;
+    
+}
+.tag-logo:focus {
+    color: #202D36;
+}
+.tag-logo {
+    color: black;
+}
+
+.f1-logo {
+    height: 20vh;
+}
+
+.credits-banner {
+    
+}

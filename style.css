@@ -7,7 +7,75 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))url(Banner/kim1.jpg);
+    background-image: url(Banner/kim1.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3C0007; /*or use the color 5C7896*/
+    height: 5vh;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after {
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.f1-content {
+    width: 100%;
+    position: absolute;
+    /* top: 50%; */
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #3C0007; /*or use the color 5C7896*/
+    color: white;
+}
+
+button:hover {
+    text-decoration: underline;
+
 }

@@ -368,6 +368,24 @@ textarea{
 
 
  @media(max-width:736px){
+
+    .banner{
+        width: auto;
+        background-size: fill;
+        overflow-y: hidden;
+    }
+    .navbar {
+        width: 75%;
+    }
+    .f1-content h1{
+        font-size: 20px;
+    }
+    .f1-content button{
+        width: 25%;
+    }
+    .slide {
+        width: 25%;
+    }
     .contact-form .main{
         flex-direction: column;
     }
@@ -398,5 +416,12 @@ textarea{
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+}
+  .navbar {
+        width: 100%;
+}
+  .navbar li {
+        width: 100%;
+        display: grid;
 }
 }

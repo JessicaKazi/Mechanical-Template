@@ -170,24 +170,33 @@ textarea{
     padding: 14px 15px;
 }
 
-.carousel-driver {
-    width: 100%;
-    overflow-x: auto;
-    margin: 3em auto;
-    display: flex;
-    gap: 1em;
+/* THE CAROUSEL ANIMATION */
+
+.carousel-driver-title {
+    color: white;
+    text-align: center;
+    margin: 20px 0 0 20px;
+    font-size: 2.5em;
 }
 
-.carousel::-webkit-scrollbar {
-    display: none;
+.carousel-driver-title:hover {
+    color:#202D36;
+    text-decoration: dashed;
+}
+
+.carousel {
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid red;
+    display: flex;
 }
 
 .spin {
-    flex: 0 0 20em;
-    height: 12em;
-    background-color: white;
-    padding: 1em;
-    border-radius: .5em;
-    text-align: center;
-    align-items: center;
+   height: 5em;
+   padding: 1em;
+   background-color: white;
+   border-radius: 5px;
+   align-items: center;
 }
+
+/* THE CAROUSEL ANIMATION */

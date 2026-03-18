@@ -6,6 +6,7 @@
 
 body {
     background-color: #5C7896;
+    font-family: "ubuntu", "oswald";
 }
 
 .banner {
@@ -68,11 +69,117 @@ body {
     padding-top: 35px;
 }
 
+.f1-content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.f1-content p{
+    margin: 20px auto;
+    font-weight: 900;
+    line-height: 25px;
+}
+
+/* animation gallery */
+
+    .carousel-driver-title {
+    color: white;
+    text-align: center;
+    margin: 20px 0 0 20px;
+    padding: 20px 0;
+    font-size: 2.5em;
+}
+
+.carousel-driver-title:hover {
+    color:#202D36;
+    text-decoration: dashed;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+figure {
+    position: relative;
+    left: 0;
+    width: 400%; 
+    animation: 10s slide infinite;
+}
+
+.slide {
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    66%{
+        left:-200%;
+    }
+    74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
+    90%{
+        left:0;
+    }
+    1000%{
+        left:0;
+    }
+}
+/* animation gallery */
+
 button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
-    margin: 20px 10px;
+    margin: 90px 10px;
     border-radius: 15px;
     cursor: pointer;
     background-color: #3C0007; /*or use the color 5C7896*/
@@ -96,6 +203,7 @@ button:hover {
 }
 
 .container{
+    max-width: 800px;
     margin-top: 0 auto; 
 }
 
@@ -104,7 +212,8 @@ button:hover {
     font-size: 2.5rem;
     font-weight: 400;
     color: #fff;
-    font-family: ;
+    font-family: "Ubuntu";
+    font-weight: 700;
 }
 
 .contact-form .main{
@@ -114,13 +223,26 @@ button:hover {
 }
 
 .content {
+    flex-basis: 50%;
     padding: 3em 3em;
-    background: #3C0007;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
-.form-img img{
+.form-img {
+    flex-basis: 50%;
+    background: #f0f4f8;
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+
+.form-img img {
     max-width: 100%;
 }
 
@@ -170,33 +292,111 @@ textarea{
     padding: 14px 15px;
 }
 
-/* THE CAROUSEL ANIMATION */
+/* footer */
 
-.carousel-driver-title {
-    color: white;
-    text-align: center;
-    margin: 20px 0 0 20px;
-    font-size: 2.5em;
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+}
+.footer{
+	background-color: #3C0007;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #009688;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: white;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #202D36;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
-.carousel-driver-title:hover {
-    color:#202D36;
-    text-decoration: dashed;
+
+
+ @media(max-width:736px){
+    .contact-form .main{
+        flex-direction: column;
+    }
+    .contact-form form{
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+    .form-img{
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content{
+        order: 1;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 }
 
-.carousel {
-    margin: 100px auto;
-    width: 90%;
-    border: 5px solid red;
-    display: flex;
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
 }
-
-.spin {
-   height: 5em;
-   padding: 1em;
-   background-color: white;
-   border-radius: 5px;
-   align-items: center;
 }
-
-/* THE CAROUSEL ANIMATION */
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

@@ -177,9 +177,9 @@ figure {
 
 button {
     width: 200px;
-    padding: 15px 0;
+    padding: 5px 0;
     text-align: center;
-    margin: 90px 10px;
+    margin: 30px 10px;
     border-radius: 15px;
     cursor: pointer;
     background-color: #3C0007; /*or use the color 5C7896*/
@@ -196,7 +196,7 @@ button:hover {
     min-height: 100vh;
     z-index: 0;
     background: #5C7896;
-    padding: 30px;
+    padding: 0px 30px;
     justify-content: center;
     display: grid;
     align-items: center;
@@ -205,9 +205,11 @@ button:hover {
 .container{
     max-width: 800px;
     margin-top: 0 auto; 
+    margin-left: 400px;
 }
 
 .contact-form h1{
+    margin-top: 10px;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
@@ -224,14 +226,14 @@ button:hover {
 
 .content {
     flex-basis: 50%;
-    padding: 3em 3em;
-    background: #fff;
+    padding: 0em 3em;
+    background: #202D36;
     box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
-    border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-radius: 30px;
 }
 
-.form-img {
+/* .form-img {
     flex-basis: 50%;
     background: #f0f4f8;
     background-size: cover;
@@ -244,7 +246,7 @@ button:hover {
 
 .form-img img {
     max-width: 100%;
-}
+} */
 
 .btn,
 button,
@@ -286,7 +288,7 @@ textarea{
     font-size: 18px;
     color: #fff;
     width: 100%;
-    background: #202D36;
+    background: #5C7896;
     font-weight: 600;
     transition: 0.3s ease;
     padding: 14px 15px;
@@ -365,21 +367,17 @@ textarea{
 	background-color: #ffffff;
 }
 
-/* .about-section{
-    background: url(/Banner/GettyImages-2266592950.avif) no-repeat left;
-    background-size: 60%;
-    border-radius: 100px;
-    overflow: hidden;
-    padding: 100px 0;
-} */
+
 
 .inner-container{
-    /* width: 40%; */
-    float: right;
+    width: 80%;
+    /* float: right; */
     background-color: #202D36;
-    padding: 150px;
+    padding: 50px;
     border-radius: 50px;
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-bottom: 30px;
 }
 
 .inner-container h1{
@@ -387,6 +385,12 @@ textarea{
     font-size: 30px;
     font-weight: 900;
     color: white;
+    text-decoration: underline;
+}
+
+.f1-text-intro {
+    padding-top: 30px;
+    text-decoration: underline;
 }
 
 .text{
@@ -405,10 +409,23 @@ textarea{
     color: white;
 }
 
+.skills a {
+    text-decoration: none;
+    color: white;
+}
+
+.skills a:hover {
+    color: #5C7896;
+}
+
 .video-container {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+.gif-banner {
+    width: 100%;
 }
 
  @media(max-width:736px){
